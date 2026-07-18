@@ -308,7 +308,8 @@ async function init() {
     if (saved) cart = JSON.parse(saved);
   } catch {}
 
-  document.getElementById("storeName").textContent = CONFIG.nombre;
+  const storeNameEl = document.getElementById("storeName");
+  if (storeNameEl) storeNameEl.textContent = CONFIG.nombre;
 
   const heroTitleEl = document.getElementById("heroTitle");
   if (heroTitleEl) heroTitleEl.textContent = CONFIG.heroTitle || CONFIG.nombre;
