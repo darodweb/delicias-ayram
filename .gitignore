@@ -1,0 +1,32 @@
+# Claude Code
+.claude/
+.agents/
+skills-lock.json
+
+# Dependencies
+node_modules/
+
+# Environment variables — never commit
+.env
+.env.local
+.env.*.local
+.env.production
+.env.staging
+
+# Local media staging (imágenes se sirven desde Cloudinary)
+imagenes/
+
+# Personal notes
+todos.txt
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+npm-debug.log*
+
+# Wrangler local cache (contains account IDs)
+worker/.wrangler/
